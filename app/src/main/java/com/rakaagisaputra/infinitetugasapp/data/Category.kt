@@ -1,10 +1,15 @@
 package com.rakaagisaputra.infinitetugasapp.data
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+
+@Parcelize
 // TODO: Membuat struktur data untuk menyimpan informasi tentang kategori makanan.
 data class Category(val idCategory: String,
     val strCategory: String,
     val strCategoryThumb: String,
-    val strCategoryDescription: String)
+    val strCategoryDescription: String):Parcelable
 
 
 // TODO: respons dari API yang berisi daftar kategori makanan.
